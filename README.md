@@ -81,8 +81,7 @@ STRIPE_PUBLIC_KEY=your_stripe_public_key
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/ai-ecommerce.git
-cd ai-ecommerce
+git clone https://github.com/harshkaushik-ai/AI-Ecommerce-Platform.git
 ```
 
 ### 2. Install Dependencies
@@ -146,7 +145,7 @@ This project is for educational and portfolio purposes.
 ## 🙌 Author
 
 **Harsh Kaushik**
-BBA Student | Full Stack Developer | AI Enthusiast
+BTech Student | Full Stack Developer | AI Enthusiast
 
 ---
 
