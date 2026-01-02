@@ -1,12 +1,153 @@
-# React + Vite
+# AI-Powered E-Commerce Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack AI-enabled e-commerce web application featuring intelligent product search using **Google Gemini API** and secure online payments via **Stripe**. The platform delivers a modern shopping experience with authentication, cart management, and order processing.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+* 🔍 **AI Product Search** – Smart natural-language product search powered by Google Gemini API
+* 🛒 **E-Commerce Core** – Product listings, cart, checkout, and order management
+* 💳 **Secure Payments** – Stripe payment gateway integration
+* 👤 **User Authentication** – Login, registration, and protected routes
+* 📦 **Order Tracking** – View order history and payment status
+* 🧑‍💼 **Admin Panel** – Manage products, users, and orders
+* 🌙 **Modern UI** – Responsive React UI with clean UX
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+* React.js
+* Redux Toolkit
+* Tailwind CSS
+* Axios
+
+### Backend
+
+* Node.js
+* Express.js
+* PostgreSQL
+* JWT Authentication
+
+### Integrations
+
+* Google Gemini API (AI Search)
+* Stripe (Payments)
+
+---
+
+## 📂 Project Structure
+
+```
+client/        # React frontend
+server/        # Node + Express backend
+ ├─ routes/    # API routes
+ ├─ controllers/
+ ├─ middlewares/
+ ├─ database/
+ └─ utils/
+```
+
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env` file in both **client** and **server** directories.
+
+### Backend (`server/.env`)
+
+```
+PORT=5000
+DATABASE_URL=your_postgres_connection
+JWT_SECRET=your_jwt_secret
+STRIPE_SECRET_KEY=your_stripe_secret
+GEMINI_API_KEY=your_gemini_api_key
+```
+
+### Frontend (`client/.env`)
+
+```
+VITE_API_BASE_URL=http://localhost:5000
+STRIPE_PUBLIC_KEY=your_stripe_public_key
+```
+
+---
+
+## ▶️ Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/ai-ecommerce.git
+cd ai-ecommerce
+```
+
+### 2. Install Dependencies
+
+```bash
+# Backend
+cd server
+npm install
+
+# Frontend
+cd ../client
+npm install
+```
+
+### 3. Run the Application
+
+```bash
+# Backend
+cd server
+npm run dev
+
+# Frontend
+cd client
+npm run dev
+```
+
+---
+
+## 🧠 AI Search Workflow
+
+1. User enters a natural language search query
+2. Query is sent to Gemini API
+3. AI processes intent and returns relevant product results
+4. Products are ranked and displayed dynamically
+
+---
+
+## 🔐 Payments Workflow
+
+* Stripe Payment Intent is generated on the backend
+* Secure checkout handled via Stripe
+* Payment status saved in the database
+
+---
+
+## 📌 Future Enhancements
+
+* Product recommendations based on user behavior
+* Review & rating system
+* AI chatbot for shopping assistance
+* Wishlist and advanced filtering
+
+---
+
+## 📄 License
+
+This project is for educational and portfolio purposes.
+
+---
+
+## 🙌 Author
+
+**Harsh Kaushik**
+BBA Student | Full Stack Developer | AI Enthusiast
+
+---
+
+⭐ If you like this project, feel free to star the repository!
