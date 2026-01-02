@@ -11,6 +11,6 @@ router.delete("/admin/delete/:productID",isAuthenticated,authorizedRoles("Admin"
 router.get("/singleproduct/:productID",fetchSingleProduct)
 router.put("/post-new/review/:productID",isAuthenticated,postProductReview)
 router.delete("/delete/review/:productID",isAuthenticated,deleteReview)
-router.get("/aisearch",fetchAIFilteredProducts)
+router.post("/aisearch",fetchAIFilteredProducts)
 
 export default router
