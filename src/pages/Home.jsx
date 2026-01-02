@@ -15,10 +15,11 @@ const Index = () => {
       <HeroSlider />
       <div className="container mx-auto px-4 pt-20">
         <CategoryGrid />
-        {newProducts.length > 0 && (
+        {newProducts?.length > 0 && (
+          console.log(newProducts),
           <ProductSlider title="New Arrivals" products={newProducts} />
         )}
-        {topRatedProducts.length > 0 && (
+        {topRatedProducts?.length > 0 && (
           <ProductSlider
             title="Top Rated Products"
             products={topRatedProducts}

@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { ToastContainer } from "react-toastify";
+import { Loader } from "lucide-react";
 
 // Layout Components
 import Navbar from "./components/Layout/Navbar";
@@ -22,8 +23,43 @@ import About from "./pages/About";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import { useDispatch, useSelector } from "react-redux";
+import { getUser } from "./store/slices/authSlice";
+import { useEffect } from "react";
+import { fetchAllProducts } from "./store/slices/productSlice";
+import { categories } from "./data/products";
 
 const App = () => {
+  const {authUser,isCheckingAuth} = useSelector((state)=>state.auth)
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(getUser())
+  }, [getUser])
+
+  useEffect(()=>{
+    dispatch(fetchAllProducts({
+      category:"",
+      price:"0-1000000",
+      ratings:"",
+      search:"",
+      page:1,
+      availability:"",
+    }))
+  },[dispatch])
+
+  const products = useSelector((state)=>state.product)
+  
+
+  if((isCheckingAuth && !authUser) ){
+    return <>
+    <div className="flex items-center justify-center h-screen">
+      <Loader className="size-10 animate-spin"/>
+      </div></>
+  }
+
+
+
   return (
     <>
       <ThemeProvider>

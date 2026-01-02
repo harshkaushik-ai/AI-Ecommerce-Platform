@@ -18,6 +18,17 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: [
+          "Plus Jakarta Sans",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "sans-serif",
+        ],
+      },
+
+
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

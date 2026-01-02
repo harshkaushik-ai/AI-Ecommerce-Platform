@@ -6,6 +6,7 @@ import productReducer from "./slices/productSlice";
 import orderReducer from "./slices/orderSlice";
 
 export const store = configureStore({
+  
   reducer: {
     auth: authReducer,
     popup: popupReducer,
@@ -13,4 +14,9 @@ export const store = configureStore({
     product: productReducer,
     order: orderReducer,
   },
+  devTools:true,
 });
+
+
+
+

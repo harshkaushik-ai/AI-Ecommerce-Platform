@@ -30,7 +30,7 @@ const HeroSlider = () => {
       title: "Home & Garden",
       subtitle: "Transform your space",
       description: "Beautiful furniture and decor for every home",
-      image: "./furniture.jpg",
+      image: "./home.jpg",
       cta: "Shop Home",
       url: `/products?category=Home & Garden`,
     },
@@ -66,7 +66,7 @@ const HeroSlider = () => {
             <h3 className="text-lg font-medium text-primary mb-2">
               {slide.subtitle}
             </h3>
-            <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-4">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
               {slide.title}
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

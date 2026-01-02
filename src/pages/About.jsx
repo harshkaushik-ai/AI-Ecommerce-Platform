@@ -28,7 +28,7 @@ const About = () => {
     <div className="min-h-screen bg-background pt-20">
       <div className="max-w-4xl mx-auto px-4 py-16">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-foreground mb-6">About ShopMate</h1>
+          <h1 className="text-4xl font-bold text-foreground mb-6">About Nexza</h1>
           <p className="text-xl text-muted-foreground">
             Your trusted e-commerce platform for quality products and exceptional service.
           </p>
@@ -49,7 +49,7 @@ const About = () => {
         <div className="bg-secondary rounded-xl p-8">
           <h2 className="text-2xl font-bold text-foreground mb-4">Our Story</h2>
           <p className="text-muted-foreground leading-relaxed">
-            Founded with a vision to make online shopping simple and enjoyable, ShopMate has grown 
+            Founded with a vision to make online shopping simple and enjoyable, Nexza has grown 
             to become a trusted platform for thousands of customers worldwide. We believe that 
             everyone deserves access to quality products at fair prices, backed by exceptional 
             customer service.
