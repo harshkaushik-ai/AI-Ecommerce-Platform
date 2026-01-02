@@ -1,4 +1,4 @@
-# AI-Powered E-Commerce Platform
+# AI E-Commerce Platform
 
 A full-stack AI-enabled e-commerce web application featuring intelligent product search using **Google Gemini API** and secure online payments via **Stripe**. The platform delivers a modern shopping experience with authentication, cart management, and order processing.
 
