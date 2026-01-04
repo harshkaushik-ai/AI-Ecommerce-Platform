@@ -1,0 +1,7 @@
+[build]
+  base    = "client"       # folder where your frontend lives
+  publish = "dist"         # folder with build output
+  command = "npm run build"
+
+[functions]
+  directory = "client/netlify/functions"
