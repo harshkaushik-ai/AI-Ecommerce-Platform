@@ -1,8 +1,9 @@
 import dotenv from "dotenv";
-dotenv.config({ path: "./config/config.env" });
+dotenv.config();
 
 import app from "./app.js";
 import {v2 as cloudinary} from "cloudinary"
+// import serverless from "serverless-http";
 
 
 cloudinary.config({
@@ -12,6 +13,6 @@ cloudinary.config({
 })
 
 
-app.listen(process.env.PORT,()=>{
-    console.log(`Server is working on http://localhost:${process.env.PORT}`);
-})
+// export const handler = serverless(app);
+
+const PORT = process.env.PORT || 4000;

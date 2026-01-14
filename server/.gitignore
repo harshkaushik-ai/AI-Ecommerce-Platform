@@ -6,7 +6,8 @@ config/config.env
 node_modules/
 logs/
 *.log
-
+uploads
+uploads/
 node_modules
 .env
 dist

@@ -1,6 +1,7 @@
 import database from "../database/db.js";
 import Stripe from "stripe";
-
+import { config } from "dotenv";
+config();
 let stripe;
 
 function initializeStripe() {
