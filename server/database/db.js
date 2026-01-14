@@ -12,6 +12,7 @@ const database = new Client({
     port:process.env.DB_PORT,
     ssl:{
         required:true,
+        rejectUnauthorized: false,
     }
 })
 
