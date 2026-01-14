@@ -76,11 +76,14 @@ app.post(
   }
 );
 
-/* normal middleware AFTER webhook */
-// app.use(cors({
-//   origin: ["http://localhost:4173", process.env.DASHBOARD_URL],
-//   credentials: true,
-// }));
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "https://nexza.netlify.app"], 
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 
 app.use(
   cors({
