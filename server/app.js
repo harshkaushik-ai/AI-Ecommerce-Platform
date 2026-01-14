@@ -78,7 +78,7 @@ app.post(
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://nexza.netlify.app"], 
+    origin: ["http://localhost:5173", "https://nexza.netlify.app","https://ai-ecommerce-platform-nine.vercel.app/"], 
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
