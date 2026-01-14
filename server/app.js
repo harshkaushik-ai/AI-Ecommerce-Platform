@@ -78,15 +78,13 @@ app.post(
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://nexza.netlify.app","https://ai-ecommerce-platform-nine.vercel.app/"], 
+    origin: ["http://localhost:5173", "https://nexza.netlify.app","https://ai-ecommerce-platform-nine.vercel.app"], 
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
-
-// app.options("*", cors()); // Enable pre-flight for all routesnom
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
