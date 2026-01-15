@@ -136,7 +136,7 @@ const ProductDetail = () => {
 
               </div>
               <span className="text-muted-foreground font-medium">{product.ratings}</span>
-              <span className="text-muted-foreground">({productReviews?.length}) reviews</span>
+              <span className="text-muted-foreground">({product.review_count}) reviews</span>
 
             </div>
 
