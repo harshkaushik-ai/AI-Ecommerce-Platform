@@ -18,7 +18,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         pages.push("...")
         pages.push(totalPages)
       }
-      else if( currentPage <= totalPages -2){
+      else if( currentPage >= totalPages -2){
         pages.push(1)
         pages.push("...")
         for(let i = totalPages-3;i<=totalPages;i++){
@@ -54,7 +54,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
       getPageNumbers().map((page,index)=>{
         return (
           <button 
-          key={index}
+          key={typeof page === 'number' ? page : `ellipsis-${index}`}
           disabled={page === "..."}
           onClick={()=>typeof page === "number" && onPageChange(page)}
           className={`px-4 py-2 rounded-lg font-medium transition-all ${page === currentPage ? "gradient-primary text-primary-foreground" : page === "..." ? "cursor-default text-muted-foreground" : "glass-card hover:glow-on-hover text-foreground hover:text-primary"}`}
