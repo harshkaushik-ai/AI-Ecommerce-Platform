@@ -174,7 +174,7 @@ const Products = () => {
                 bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 
                 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 
                 focus:outline-none focus:ring-purple-200 
-                dark:focus:ring-purple-800 max-[440px]:min-w-full min-w-[132px]"
+                dark:focus:ring-purple-800 max-[440px]:min-w-full w-[160px] h-[52px] whitespace-nowrap flex-shrink-0"
                 onClick={() => dispatch(toggleAIModal())}
               >
                 <span className="relative w-full px-5 py-3 transition-all ease-in duration-75 
